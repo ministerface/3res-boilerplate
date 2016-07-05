@@ -54,7 +54,7 @@ r.connect({ db: 'app' })
         r.table('todos').changes({ includeInitial: true, squash: true }).run(connection)
         .then(changefeedSocketEvents(socket, 'todos'));
     });
-    server.listen(9000);
+    server.listen(3000);
 })
 .error(function(error) {
     console.log('Error connecting to RethinkDB!');

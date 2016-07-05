@@ -4,7 +4,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        Тест
+        Тест 1
       </div>
     );
   }
