@@ -1,5 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { App } from './App';
+import { Router, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import store, { history } from './store';
+import { routes } from './routes';
 
-render(<App />, document.getElementById('root'));
+import  App from './containers/App.js';
+
+const router = (
+  <Provider store={ store }>
+    <Router history={ history } routes={ routes } />
+  </Provider>
+);
+
+render(router, document.getElementById('root'));

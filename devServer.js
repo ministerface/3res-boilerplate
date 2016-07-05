@@ -60,15 +60,3 @@ r.connect({ db: 'app' })
     console.log('Error connecting to RethinkDB!');
     console.log(error);
 });
-
-
-/*
-app.listen(3000, function(err) {
-  if (err) {
-    console.log(err);
-    return;
-  }
-
-  console.log('Listening at http://localhost:3000');
-});
-*/
