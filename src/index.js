@@ -7,6 +7,10 @@ import { routes } from './routes';
 
 import  App from './containers/App.js';
 
+import todoSocketListeners from './socket-listeners/todos.js';
+todoSocketListeners(store);
+
+
 const router = (
   <Provider store={ store }>
     <Router history={ history } routes={ routes } />

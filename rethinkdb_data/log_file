@@ -1,0 +1,18 @@
+2016-07-06T09:31:23.468288683 0.235959s notice: Recursively removing directory /home/stimdon/work/3res-boilerplate/rethinkdb_data/tmp
+2016-07-06T09:31:23.508619884 0.276290s notice: Initializing directory /home/stimdon/work/3res-boilerplate/rethinkdb_data
+2016-07-06T09:31:23.508811583 0.276479s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/stimdon/work/3res-boilerplate/rethinkdb_data' did not already exist or is empty.)
+2016-07-06T09:31:23.508899855 0.276567s notice: Running rethinkdb 2.3.4~0trusty (GCC 4.8.2)...
+2016-07-06T09:31:23.528622572 0.296292s notice: Running on Linux 3.13.0-91-generic x86_64
+2016-07-06T09:31:23.528752656 0.296420s notice: Loading data from directory /home/stimdon/work/3res-boilerplate/rethinkdb_data
+2016-07-06T09:31:24.184790099 0.952459s info: Automatically using cache size of 1147 MB
+2016-07-06T09:31:24.191777209 0.959444s notice: Listening for intracluster connections on port 29015
+2016-07-06T09:31:24.219471986 0.987139s notice: Listening for client driver connections on port 28015
+2016-07-06T09:31:24.219590938 0.987258s notice: Listening for administrative HTTP connections on port 8080
+2016-07-06T09:31:24.219594372 0.987261s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-06T09:31:24.219595729 0.987263s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-06T09:31:24.219597990 0.987265s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-06T09:31:24.219600136 0.987267s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-06T09:31:24.219603991 0.987271s notice: Server ready, "stimdon_9aj" 71c1a4b4-ece3-4618-a10d-3b3e72162ce8
+2016-07-06T09:33:15.688580173 112.456248s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: Starting a new Raft election for term 1.
+2016-07-06T09:33:15.707486316 112.475154s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: Added replica on this server.
+2016-07-06T09:33:15.798027679 112.565695s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: This server is Raft leader for term 1. Latest log index is 0.
