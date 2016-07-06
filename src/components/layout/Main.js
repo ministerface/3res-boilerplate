@@ -12,10 +12,14 @@ export default class Main extends Component {
   addTodo(e){
       e.preventDefault();
 
+/*
       socket.emit('todos:client:insert', {
                     completed: false,
                     name: event.target.value
                 });
+*/
+
+  this.props.actionTodos.addTodo();
 
   }
 

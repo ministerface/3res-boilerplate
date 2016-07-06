@@ -16,3 +16,4 @@
 2016-07-06T09:33:15.688580173 112.456248s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: Starting a new Raft election for term 1.
 2016-07-06T09:33:15.707486316 112.475154s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: Added replica on this server.
 2016-07-06T09:33:15.798027679 112.565695s info: Table c055fba5-fed1-4d7a-aede-e997ee591237: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-06T13:34:24.231497681 14580.999166s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
