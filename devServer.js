@@ -10,6 +10,26 @@ var io = require('socket.io')(server);
 var r = require('rethinkdb');
 var changefeedSocketEvents = require('./socket-events.js');
 
+var router = express.Router();
+
+router.get('/', function(req, res) {
+
+  r.connect({ db: 'app' })
+  .then(function(connection) {
+    r.table('Feeds').run(connection).then(function(cursor){
+      cursor.toArray(function(err, result) {
+      if(err) {
+        return next(err);
+      }
+
+      res.json(result);
+    });
+
+    });
+  });
+
+
+});
 
 var compiler = webpack(config);
 
@@ -24,9 +44,17 @@ app.use('/public', express.static('public'));
 app.use("/styles", express.static(__dirname + '/styles'));
 app.use("/images", express.static(__dirname + '/images'));
 
+
+app.use('/api', router);
+
+
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+
+
+
 
 r.connect({ db: 'app' })
 .then(function(connection) {
