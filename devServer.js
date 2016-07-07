@@ -34,27 +34,27 @@ r.connect({ db: 'app' })
     io.on('connection', function (socket) {
 
         // insert new todos
-        socket.on('todos:client:insert', function(todo) {
-            r.table('todos').insert(todo).run(connection);
+        socket.on('feed:client:insert', function(todo) {
+            r.table('Feeds').insert(todo).run(connection);
         });
 
         // update todo
-        socket.on('todos:client:update', function(todo) {
+        socket.on('feed:client:update', function(todo) {
             var id = todo.id;
             delete todo.id;
-            r.table('todos').get(id).update(todo).run(connection);
+            r.table('Feeds').get(id).update(todo).run(connection);
         });
 
         // delete todo
-        socket.on('todos:client:delete', function(todo) {
+        socket.on('feed:client:delete', function(todo) {
             var id = todo.id;
             delete todo.id;
-            r.table('todos').get(id).delete().run(connection);
+            r.table('Feeds').get(id).delete().run(connection);
         });
 
         // emit events for changes to todos
-        r.table('todos').changes({ includeInitial: true, squash: true }).run(connection)
-        .then(changefeedSocketEvents(socket, 'todos'));
+        r.table('Feeds').changes({ includeInitial: true, squash: true }).run(connection)
+        .then(changefeedSocketEvents(socket, 'feed'));
     });
     server.listen(3000);
 })

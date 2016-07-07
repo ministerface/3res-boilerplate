@@ -12,10 +12,6 @@ export default class Main extends Component {
     super(props);
   }
 
-  addTodo(e){
-      e.preventDefault();
-      this.props.actionTodos.addTodo({user:"Вячеслав", message:"Тест"});
-  }
 
   render() {
     return (
@@ -24,7 +20,7 @@ export default class Main extends Component {
         <Header />
 
         <Content {...this.props}/>
-        <div onClick={this.addTodo.bind(this)}>тест</div>
+        
         <Footer />
       </div>
     );

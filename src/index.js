@@ -14,6 +14,8 @@ import  App from './containers/App.js';
 import todoSocketListeners from './socket-listeners/todos.js';
 todoSocketListeners(store);
 
+import feedSocketListeners from './socket-listeners/feeds.js';
+feedSocketListeners(store);
 
 const router = (
   <Provider store={ store }>

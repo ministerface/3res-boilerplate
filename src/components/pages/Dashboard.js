@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import FeedList from '../ui/FeedList';
+import AddFeed from '../ui/AddFeed';
+
 
 export default class Dashboard extends Component {
   render() {
@@ -29,110 +32,11 @@ export default class Dashboard extends Component {
               </div>
             </div>
           </div>
-          <div className="box">
-            <form>
-              <textarea className="form-control no-border" rows="3" placeholder="Напишите что нибудь..."></textarea>
-            </form>
-            <div className="box-footer clearfix">
-              <button className="btn btn-info pull-right btn-sm">Отправить</button>
-              <ul className="nav nav-pills nav-sm">
-                <li className="nav-item"><a className="nav-link"><i className="fa fa-camera text-muted"></i></a></li>
-                <li className="nav-item"><a className="nav-link"><i className="fa fa-video-camera text-muted"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="box">
-            <div className="box-header">
-              <h3>Лента <span className="label success">5</span></h3>
-            </div>
-            <div className="box-body">
-              <div className="streamline b-l m-l-md">
-                <div className="sl-item">
-                  <div className="sl-left">
-                    <img src="images/a0.jpg" className="img-circle"/>
-                  </div>
-                  <div className="sl-content">
-                    <div className="sl-date text-muted">2 минуты назад</div>
-                    <div className="sl-author">
-                      <a>Вячеслав</a>
-                    </div>
-                    <div>
-                      <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus
-                      at ultricies neque, quis malesuada augue. Donec eleifend</p>
-                    </div>
 
-                    <div className="box collapse m-a-0 b-a" id="reply-1">
-                      <form>
-                        <textarea className="form-control no-border" rows="3" placeholder="Type something..."></textarea>
-                      </form>
-                      <div className="box-footer clearfix">
-                        <button className="btn btn-info pull-right btn-sm">Post</button>
-                        <ul className="nav nav-pills nav-sm">
-                          <li className="nav-item"><a className="nav-link"><i className="fa fa-camera text-muted"></i></a></li>
-                          <li className="nav-item"><a className="nav-link"><i className="fa fa-video-camera text-muted"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-item">
-                  <div className="sl-left">
-                    <img src="images/a2.jpg" className="img-circle"/>
-                  </div>
-                  <div className="sl-content">
-                    <div className="sl-date text-muted">8:30</div>
-                    <div className="sl-author">
-                      <a >Moke</a>
-                    </div>
-                    <div>
-                      <p>Just followed <a className="text-info">Jacob</a> and she followed you too.</p>
-                      <p>
-                        <span className="inline p-a-xs b-a dark-white">
-                          <img src="images/b2.jpg" className="img-responsive"/>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="sl-item">
-                  <div className="sl-left">
-                    <img src="images/a3.jpg" className="img-circle"/>
-                  </div>
-                  <div className="sl-content">
-                    <div className="sl-date text-muted">Sat, 5 Mar</div>
-                    <div className="sl-author">
-                      <a >Moke</a>
-                    </div>
-                    <blockquote>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante soe aiea ose dos soois.</p>
-                      <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-                    </blockquote>
+          <AddFeed action={this.props.feedActions}/>
+          <FeedList feeds={this.props.feeds}/>
 
 
-                    <div className="sl-item">
-                      <div className="sl-left">
-                        <img src="images/a2.jpg" className="img-circle"/>
-                      </div>
-                      <div className="sl-content">
-                        <div className="sl-date text-muted">Sun, 11 Feb</div>
-                        <p><a  className="text-info">Jessi</a> assign you a task <a  className="text-info">Mockup Design</a>.</p>
-                      </div>
-                    </div>
-                    <div className="sl-item">
-                      <div className="sl-left">
-                        <img src="images/a5.jpg" className="img-circle"/>
-                      </div>
-                      <div className="sl-content">
-                        <div className="sl-date text-muted">Thu, 17 Jan</div>
-                        <p>Follow up to close deal</p>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="col-sm-6 col-md-pull-6 col-md-3">

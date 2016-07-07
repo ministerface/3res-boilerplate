@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     return (
       <ul className="nav navbar-nav pull-left nav-active-border b-blue">
         <li className="nav-item">
-          <NavLink onlyActiveOnIndex={true} to="/"><i className="md md-dashboard"></i>Мой профиль</NavLink>
+          <NavLink onlyActiveOnIndex={true} to="/"><i className="md md-dashboard"></i>Моя страница</NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/todos">Задачи</NavLink>
