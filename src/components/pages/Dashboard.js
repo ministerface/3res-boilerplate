@@ -83,6 +83,87 @@ export default class Dashboard extends Component {
           </div>
           <div className="box">
             <div className="box-header">
+              <h3>Последние задачи</h3>
+            </div>
+            <div className="box-tool">
+              <ul className="nav">
+                <li className="nav-item inline dropdown">
+                  <a className="nav-link text-muted p-x-xs" data-toggle="dropdown">
+                    <i className="fa fa-ellipsis-v"></i>
+                  </a>
+                  <div className="dropdown-menu dropdown-menu-scale pull-right">
+                    <a className="dropdown-item" href="">New task</a>
+                    <a className="dropdown-item" href="">Make all finished</a>
+                    <a className="dropdown-item" href="">Make all unfinished</a>
+                    <div className="dropdown-divider"></div>
+                    <a className="dropdown-item">Settings</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="box-body">
+              <div className="streamline b-l m-l">
+                <div className="sl-item b-success">
+                  <div className="sl-icon">
+                    <i className="fa fa-check"></i>
+                  </div>
+                  <div className="sl-content">
+                    <div className="sl-date text-muted">8:30</div>
+                    <div>Call to customer <a href="" className="text-info">Jacob</a> and discuss the detail.</div>
+                  </div>
+                </div>
+                <div className="sl-item b-info">
+                  <div className="sl-content">
+                    <div className="sl-date text-muted">Sat, 5 Mar</div>
+                    <div>Prepare for presentation</div>
+                  </div>
+                </div>
+                <div className="sl-item b-warning">
+                  <div className="sl-content">
+                    <div className="sl-date text-muted">Sun, 11 Feb</div>
+                    <div>
+                      <a href="" className="text-info">Jessi</a> assign you a task <a href="" className="text-info">Mockup Design</a>.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="box-footer">
+              <a href="" className="btn btn-sm btn-block info text-u-c">Все задачи</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="col-sm-6 col-md-3">
+          <div className="box">
+            <div className="box-header">
+              <h4>Пользователи</h4>
+            </div>
+            <div className="list-group no-radius no-borders">
+              <a className="list-group-item text-ellipsis">
+                <span className="w-8 rounded m-r-sm success"></span>
+                <img src="images/a2.jpg" className="w-24 m-r-sm img-circle"/>
+                <span>Антон</span>
+              </a>
+              <a className="list-group-item text-ellipsis">
+                <span className="w-8 rounded m-r-sm success"></span>
+                <img src="images/a3.jpg" className="w-24 m-r-sm img-circle"/>
+                <span>Денис</span>
+              </a>
+              <a className="list-group-item text-ellipsis">
+                <span className="w-8 rounded m-r-sm dker"></span>
+                <img src="images/a4.jpg" className="w-24 m-r-sm img-circle"/>
+                <span>Александра</span>
+              </a>
+              <a className="list-group-item text-ellipsis">
+                <span className="w-8 rounded m-r-sm dker"></span>
+                <img src="images/a5.jpg" className="w-24 m-r-sm img-circle"/>
+                <span>Вадим</span>
+              </a>
+            </div>
+          </div>
+          <div className="box">
+            <div className="box-header">
               <span className="label success pull-right">5</span>
               <h3>Активность</h3>
             </div>
@@ -119,38 +200,11 @@ export default class Dashboard extends Component {
                   </div>
                 </div>
               </div>
-              <a href="" className="btn btn-sm success text-u-c m-y-sm">Показать больше</a>
-            </div>
-          </div>
 
-        </div>
-
-        <div className="col-sm-6 col-md-3">
-          <div className="box">
-            <div className="box-header">
-              <h4>Пользователи</h4>
             </div>
-            <div className="list-group no-radius no-borders">
-              <a className="list-group-item text-ellipsis">
-                <span className="w-8 rounded m-r-sm success"></span>
-                <img src="images/a2.jpg" className="w-24 m-r-sm img-circle"/>
-                <span>Антон</span>
-              </a>
-              <a className="list-group-item text-ellipsis">
-                <span className="w-8 rounded m-r-sm success"></span>
-                <img src="images/a3.jpg" className="w-24 m-r-sm img-circle"/>
-                <span>Денис</span>
-              </a>
-              <a className="list-group-item text-ellipsis">
-                <span className="w-8 rounded m-r-sm dker"></span>
-                <img src="images/a4.jpg" className="w-24 m-r-sm img-circle"/>
-                <span>Александра</span>
-              </a>
-              <a className="list-group-item text-ellipsis">
-                <span className="w-8 rounded m-r-sm dker"></span>
-                <img src="images/a5.jpg" className="w-24 m-r-sm img-circle"/>
-                <span>Вадим</span>
-              </a>
+            <div className="box-footer">
+
+              <a className="btn btn-sm btn-block success text-u-c">Показать больше</a>
             </div>
           </div>
 

@@ -28,7 +28,6 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-
 r.connect({ db: 'app' })
 .then(function(connection) {
     io.on('connection', function (socket) {
