@@ -54,17 +54,13 @@ export default class Dashboard extends Component {
                   <div className="sl-content">
                     <div className="sl-date text-muted">2 минуты назад</div>
                     <div className="sl-author">
-                      <a>Peter Joo</a>
+                      <a>Вячеслав</a>
                     </div>
                     <div>
                       <p>Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. Phasellus
                       at ultricies neque, quis malesuada augue. Donec eleifend</p>
                     </div>
-                    <div className="sl-footer">
-                      <a data-toggle="collapse" data-target="#reply-1">
-                        <i className="fa fa-fw fa-mail-reply text-muted"></i> Reply
-                      </a>
-                    </div>
+
                     <div className="box collapse m-a-0 b-a" id="reply-1">
                       <form>
                         <textarea className="form-control no-border" rows="3" placeholder="Type something..."></textarea>
@@ -181,18 +177,48 @@ export default class Dashboard extends Component {
             </div>
 
           </div>
-          <div className="box light lt">
+          <div className="box">
+            <div className="box-header">
+              <span className="label success pull-right">5</span>
+              <h3>Активность</h3>
+            </div>
             <div className="box-body">
-              <a  className="pull-left m-r">
-                <img src="images/a0.jpg" className="img-circle w-40"/>
-              </a>
-              <div className="clear p-a-xs">
-                <a >@Mike Mcalidek</a>
-                <small className="block text-muted">2,415 followers / 225 tweets</small>
-                <a  className="btn btn-sm btn-rounded white m-t-xs"><i className="fa fa-twitter m-t-xs"></i> Follow</a>
+              <div className="streamline b-l m-b m-l">
+                <div className="sl-item">
+                  <div className="sl-left">
+                    <img src="images/a2.jpg" className="img-circle"/>
+                  </div>
+                  <div className="sl-content">
+                    <a href="" className="text-info">Louis Elliott</a>
+                    <span className="m-l-sm sl-date">5 min ago</span>
+                    <div>assign you a task <a href="" className="text-info">Mockup Design</a>.</div>
+                  </div>
+                </div>
+                <div className="sl-item">
+                  <div className="sl-left">
+                    <img src="images/a5.jpg" className="img-circle"/>
+                  </div>
+                  <div className="sl-content">
+                    <a href="" className="text-info">Terry Moore</a>
+                    <span className="m-l-sm sl-date">10 min ago</span>
+                    <div>Follow up to close deal</div>
+                  </div>
+                </div>
+                <div className="sl-item">
+                  <div className="sl-left">
+                    <img src="images/a8.jpg" className="img-circle"/>
+                  </div>
+                  <div className="sl-content">
+                    <a href="" className="text-info">Walter Paler</a>
+                    <span className="m-l-sm sl-date">1 hour ago</span>
+                    <div>was added to Repo</div>
+                  </div>
+                </div>
               </div>
+              <a href="" className="btn btn-sm success text-u-c m-y-sm">Показать больше</a>
             </div>
           </div>
+
         </div>
 
         <div className="col-sm-6 col-md-3">
@@ -226,7 +252,7 @@ export default class Dashboard extends Component {
 
         </div>
       </div>
-      
+
     );
   }
 }

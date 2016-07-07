@@ -14,15 +14,17 @@ export default class Main extends Component {
 
   addTodo(e){
       e.preventDefault();
-  this.props.actionTodos.addTodo();
-
+      this.props.actionTodos.addTodo({user:"Вячеслав", message:"Тест"});
   }
 
   render() {
     return (
       <div className="app">
+
         <Header />
+
         <Content {...this.props}/>
+        <div onClick={this.addTodo.bind(this)}>тест</div>
         <Footer />
       </div>
     );

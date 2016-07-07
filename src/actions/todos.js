@@ -4,8 +4,9 @@ const socket = io.connect('/');
 export const addTodo = (todo) => {
 
   socket.emit('todos:client:insert', {
-                completed: false,
-                name: event.target.value
+                user: todo.user,
+                date: new Date(),
+                message: todo.message
             });
 
   return {
