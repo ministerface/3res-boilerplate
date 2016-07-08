@@ -34,7 +34,7 @@ export default class Dashboard extends Component {
           </div>
 
           <AddFeed action={this.props.feedActions}/>
-          <FeedList feeds={this.props.feeds}/>
+          <FeedList action={this.props.feedActions} feeds={this.props.feeds}/>
 
 
         </div>

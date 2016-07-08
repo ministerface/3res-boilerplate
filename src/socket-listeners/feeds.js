@@ -2,10 +2,10 @@ import io from 'socket.io-client';
 const socket = io.connect('/');
 
 export default function(store) {
-    socket.on('feed:insert', (todo) => {
+    socket.on('feed:insert', (feed) => {
         store.dispatch({
             type: 'feed:insert',
-            todo
+            feed
         });
     });
 
