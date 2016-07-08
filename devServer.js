@@ -16,7 +16,7 @@ router.get('/feeds', function(req, res) {
 
   r.connect({ db: 'app' })
   .then(function(connection) {
-    r.table('Feeds').run(connection).then(function(cursor){
+    r.table('Feeds').orderBy(r.desc('date')).run(connection).then(function(cursor){
       cursor.toArray(function(err, result) {
       if(err) {
         return next(err);

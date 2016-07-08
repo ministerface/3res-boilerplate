@@ -12,7 +12,7 @@ export default class FeedList extends Component {
     const { feeds } = this.props;
     const countFeeds = feeds.items.length;
 
-    const feedsTemplate = feeds.items.reverse().map((item, index) => {
+    const feedsTemplate = feeds.items.map((item, index) => {
       return (
         <Feed key={item.id} feed={item}/>
       )
