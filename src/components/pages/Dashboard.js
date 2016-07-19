@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FeedList from '../ui/FeedList';
-import AddFeed from '../ui/AddFeed';
+import FeedList from '../ui/feeds/FeedList';
+import AddFeed from '../ui/feeds/AddFeed';
 
 
 export default class Dashboard extends Component {

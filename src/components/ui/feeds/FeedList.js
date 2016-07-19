@@ -24,7 +24,6 @@ export default class FeedList extends Component {
       <div className="box">
 
         <div className="box-header">
-          { feeds.isFetching ? "Загрузка..." : ""}
           <h3>Лента <span className="label success">{countFeeds}</span></h3>
         </div>
 
